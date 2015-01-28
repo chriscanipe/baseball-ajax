@@ -4,3 +4,7 @@
 .chart {
   height: 500px;
 }
+
+.avg {
+	color: green;
+}
