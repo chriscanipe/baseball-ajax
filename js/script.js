@@ -40,13 +40,14 @@ function drawStuff() {
 
 	var lastSeasonStats = playerData.stats[lastSeasonIndex];
 
-	var lastSeasonBattingAverage = lastSeasonStats.AVG;
+	var lastSeasonHomeRuns = lastSeasonStats.HR;
 	var lastSeasonYear = lastSeasonStats.year;
+	var lastSeasonTeam = lastSeasonStats.club;
 
 	//All that's left to do is write it to our page.
 	$(".chart").append("<h1>"+playerName+"</h1>");
 	$(".chart").append("<h3>"+playerTeam+"</h3>");
-	$(".chart").append("<p>In "+lastSeasonYear+", "+playerName+"'s batting average was "+lastSeasonBattingAverage);
+	$(".chart").append("<p>In "+lastSeasonYear+", "+playerName+" hit "+lastSeasonHomeRuns+" home runs for the "+lastSeasonTeam);
 
 
 	//Me: Cool, right?
